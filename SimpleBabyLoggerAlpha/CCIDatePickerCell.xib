@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="6250" systemVersion="14A389" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="162" id="7XD-Ii-Dgj" customClass="CCIDatePickerCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="162"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="7XD-Ii-Dgj" id="7vu-2f-TWX">
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="AkE-Ob-IZ9">
+                        <rect key="frame" x="0.0" y="-1" width="320" height="162"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="160" id="uok-zG-TFp"/>
+                        </constraints>
+                        <date key="date" timeIntervalSinceReferenceDate="443221126.76981699">
+                            <!--2015-01-17 20:58:46 +0000-->
+                        </date>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="uok-zG-TFp"/>
+                            </mask>
+                        </variation>
+                    </datePicker>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="centerX" secondItem="AkE-Ob-IZ9" secondAttribute="centerX" id="Y9o-nF-QAE"/>
+                    <constraint firstAttribute="bottom" secondItem="AkE-Ob-IZ9" secondAttribute="bottom" id="e5W-Bm-88p"/>
+                    <constraint firstItem="AkE-Ob-IZ9" firstAttribute="top" secondItem="7vu-2f-TWX" secondAttribute="top" id="gjl-jS-b6W"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="datePicker" destination="AkE-Ob-IZ9" id="7YJ-e5-SNv"/>
+            </connections>
+            <point key="canvasLocation" x="270" y="211"/>
+        </tableViewCell>
+    </objects>
+</document>
